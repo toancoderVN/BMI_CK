@@ -1,140 +1,140 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native'; // Import thư viện StyleSheet từ React Native để tạo các style
 
 const globalStyles = StyleSheet.create({
   container: {
-    padding: 20,
-    backgroundColor: '#e3f2fd', // Màu xanh dương nhạt sáng hơn
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    padding: 20, // Khoảng cách bên trong container
+    backgroundColor: '#ffe6f0', // Màu nền hồng pastel nhẹ
+    flex: 1, // Chiếm toàn bộ chiều cao màn hình
+    justifyContent: 'center', // Căn giữa nội dung theo chiều dọc
+    alignItems: 'center', // Căn giữa nội dung theo chiều ngang
   },
   header: {
-    fontSize: 30, // Tăng kích thước tiêu đề
-    fontWeight: 'bold',
-    marginBottom: 30, // Tăng khoảng cách với thành phần bên dưới
-    color: '#ff9800', // Màu vàng cam nổi bật
-    textAlign: 'center',
+    fontSize: 30, // Kích thước chữ của tiêu đề
+    fontWeight: 'bold', // Chữ đậm
+    marginBottom: 30, // Khoảng cách bên dưới tiêu đề
+    color: '#ff4081', // Màu chữ hồng đậm
+    textAlign: 'center', // Căn giữa chữ
   },
   error: {
-    color: '#d32f2f', // Đỏ tươi hơn cho lỗi
-    marginTop: 15, // Tăng khoảng cách với thành phần trên
-    fontSize: 16,
-    fontStyle: 'italic', // Chữ nghiêng làm lỗi nổi bật hơn
+    color: '#d50000', // Màu chữ đỏ để hiển thị thông báo lỗi
+    marginTop: 15, // Khoảng cách bên trên lỗi so với thành phần trước đó
+    fontSize: 16, // Kích thước chữ
+    fontStyle: 'italic', // Chữ nghiêng để lỗi dễ nhìn hơn
   },
 });
 
 const inputStyles = StyleSheet.create({
   inputGroup: {
-    marginBottom: 25, // Tăng khoảng cách giữa các input
-    width: '90%', // Đảm bảo input có chiều rộng ổn định
+    marginBottom: 25, // Khoảng cách bên dưới nhóm input
+    width: '90%', // Chiều rộng của nhóm input chiếm 90% màn hình
   },
   label: {
-    fontWeight: 'bold',
-    marginBottom: 10, // Tăng khoảng cách giữa label và input
-    fontSize: 18,
-    color: '#004d40', // Màu xanh lá đậm hơn để dễ nhìn
+    fontWeight: 'bold', // Chữ đậm
+    marginBottom: 10, // Khoảng cách giữa label và input
+    fontSize: 18, // Kích thước chữ của label
+    color: '#d81b60', // Màu chữ hồng rực rỡ
   },
   input: {
-    height: 55, // Tăng chiều cao để dễ nhấn hơn
-    borderColor: '#b0bec5', // Màu xám nhẹ nhàng hơn
-    borderWidth: 1.5,
-    borderRadius: 12, // Bo góc mềm mại hơn
-    paddingHorizontal: 15, // Tăng khoảng cách bên trong input
-    textAlign: 'center',
-    backgroundColor: '#ffffff', // Nền trắng rõ ràng
-    elevation: 2, // Hiệu ứng nổi nhẹ
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.1,
-    shadowRadius: 3,
+    height: 55, // Chiều cao của input
+    borderColor: '#f8bbd0', // Màu viền hồng pastel nhạt
+    borderWidth: 1.5, // Độ rộng viền input
+    borderRadius: 12, // Bo góc input
+    paddingHorizontal: 15, // Khoảng cách padding ngang bên trong input
+    textAlign: 'center', // Căn giữa nội dung text trong input
+    backgroundColor: '#ffffff', // Màu nền trắng của input
+    elevation: 2, // Đổ bóng nhẹ cho nền
+    shadowColor: '#000', // Màu của bóng đổ
+    shadowOffset: { width: 0, height: 1 }, // Hướng đổ bóng
+    shadowOpacity: 0.1, // Độ mờ của bóng
+    shadowRadius: 3, // Bán kính vùng bóng đổ
   },
 });
 
 const resultStyles = StyleSheet.create({
   result: {
-    marginTop: 30, // Tăng khoảng cách giữa kết quả và input
-    alignItems: 'center',
-    padding: 25, // Tăng không gian bên trong để thoáng hơn
-    backgroundColor: '#f1f8e9', // Xanh lá nhạt hài hòa
-    borderRadius: 15, // Bo góc lớn hơn để mềm mại hơn
-    elevation: 5, // Hiệu ứng bóng nổi bật
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.2,
-    shadowRadius: 4,
+    marginTop: 30, // Khoảng cách bên trên khung kết quả
+    alignItems: 'center', // Căn giữa nội dung trong khung
+    padding: 25, // Khoảng cách bên trong khung kết quả
+    backgroundColor: '#ffe6f0', // Màu nền hồng pastel nhạt
+    borderRadius: 15, // Bo góc khung kết quả
+    elevation: 5, // Tạo hiệu ứng đổ bóng nổi bật
+    shadowColor: '#000', // Màu bóng
+    shadowOffset: { width: 0, height: 2 }, // Hướng bóng
+    shadowOpacity: 0.2, // Độ mờ của bóng
+    shadowRadius: 4, // Bán kính bóng
   },
   bold: {
-    fontWeight: 'bold',
-    fontSize: 16, // Tăng kích thước chữ cho rõ hơn
+    fontWeight: 'bold', // Chữ đậm trong các dòng kết quả
+    fontSize: 16, // Kích thước chữ trong các dòng kết quả
   },
   underweight: {
-    color: '#fdd835', // Vàng sáng
+    color: '#ff80ab', // Màu hồng nhạt cho trạng thái thiếu cân
   },
   normal: {
-    color: '#388e3c', // Xanh lá đậm hơn
+    color: '#8e24aa', // Màu tím nhạt cho trạng thái cân nặng bình thường
   },
   overweight: {
-    color: '#fb8c00', // Cam sáng
+    color: '#f06292', // Màu hồng đậm cho trạng thái thừa cân
   },
   obese: {
-    color: '#d32f2f', // Đỏ rực
+    color: '#d50000', // Màu đỏ cho trạng thái béo phì
   },
 });
 
 const tableStyles = StyleSheet.create({
   table: {
-    backgroundColor: '#ffffff',
-    padding: 30, // Tăng khoảng cách bên trong bảng
-    borderRadius: 20, // Bo góc lớn hơn
-    marginTop: 35, // Tăng khoảng cách với thành phần trên
-    elevation: 8, // Bóng mạnh hơn để tạo chiều sâu
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 3 },
-    shadowOpacity: 0.2,
-    shadowRadius: 5,
+    backgroundColor: '#ffffff', // Màu nền trắng của bảng
+    padding: 30, // Khoảng cách bên trong bảng
+    borderRadius: 20, // Bo góc bảng
+    marginTop: 35, // Khoảng cách bên trên bảng
+    elevation: 8, // Tạo hiệu ứng bóng nổi mạnh hơn
+    shadowColor: '#000', // Màu của bóng đổ
+    shadowOffset: { width: 0, height: 3 }, // Hướng bóng đổ
+    shadowOpacity: 0.2, // Độ mờ của bóng đổ
+    shadowRadius: 5, // Bán kính của bóng đổ
   },
   header: {
-    fontSize: 24, // Tăng kích thước tiêu đề
-    fontWeight: 'bold',
-    color: '#0288d1', // Xanh dương nổi bật
-    textAlign: 'center',
-    marginBottom: 15, // Tăng khoảng cách giữa header và các dòng dữ liệu
+    fontSize: 24, // Kích thước chữ của tiêu đề bảng
+    fontWeight: 'bold', // Chữ đậm cho tiêu đề bảng
+    color: '#ec407a', // Màu chữ hồng đậm
+    textAlign: 'center', // Căn giữa tiêu đề bảng
+    marginBottom: 15, // Khoảng cách giữa tiêu đề và nội dung bảng
   },
   row: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    paddingVertical: 12, // Tăng khoảng cách giữa các hàng
-    borderBottomWidth: 1,
-    borderBottomColor: '#e0e0e0',
+    flexDirection: 'row', // Hiển thị các ô theo chiều ngang
+    justifyContent: 'space-between', // Cách đều các ô trong hàng
+    paddingVertical: 12, // Khoảng cách dọc bên trong mỗi hàng
+    borderBottomWidth: 1, // Đường viền ngang dưới mỗi hàng
+    borderBottomColor: '#f8bbd0', // Màu viền ngang hồng pastel nhạt
   },
   cell: {
-    fontSize: 16,
-    color: '#424242',
+    fontSize: 16, // Kích thước chữ của ô trong bảng
+    color: '#424242', // Màu chữ xám đậm
   },
 });
 
 const buttonStyles = StyleSheet.create({
   button: {
-    backgroundColor: '#00796b',
-    paddingVertical: 15, // Giữ chiều cao nút cân đối
-    paddingHorizontal: 40, // Tăng chiều ngang để nút rộng hơn
-    borderRadius: 12, // Bo góc mềm mại hơn
-    alignItems: 'center',
-    justifyContent: 'center',
-    elevation: 4,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.3,
-    shadowRadius: 4,
+    backgroundColor: '#f06292', // Màu nền hồng đậm của nút
+    paddingVertical: 15, // Khoảng cách dọc bên trong nút
+    paddingHorizontal: 40, // Khoảng cách ngang bên trong nút
+    borderRadius: 12, // Bo góc nút
+    alignItems: 'center', // Căn giữa nội dung theo chiều ngang
+    justifyContent: 'center', // Căn giữa nội dung theo chiều dọc
+    elevation: 4, // Tạo hiệu ứng nổi bóng nhẹ cho nút
+    shadowColor: '#000', // Màu của bóng nút
+    shadowOffset: { width: 0, height: 2 }, // Hướng bóng nút
+    shadowOpacity: 0.3, // Độ mờ của bóng nút
+    shadowRadius: 4, // Bán kính bóng nút
   },
   buttonPressed: {
-    backgroundColor: '#004d40', // Màu đậm hơn khi nhấn nút
+    backgroundColor: '#d81b60', // Màu nền hồng rực khi nhấn nút
   },
   buttonText: {
-    color: '#ffffff',
-    fontSize: 20, // Tăng kích thước chữ cho nút
-    fontWeight: 'bold',
+    color: '#ffffff', // Màu chữ trắng trên nút
+    fontSize: 20, // Kích thước chữ trên nút
+    fontWeight: 'bold', // Chữ đậm trên nút
   },
 });
 
-export { globalStyles, inputStyles, resultStyles, tableStyles, buttonStyles };
+export { globalStyles, inputStyles, resultStyles, tableStyles, buttonStyles }; // Xuất các style để sử dụng trong component
